@@ -2,7 +2,8 @@ language: dart
 dart:
   - stable
 
+before_script: dartfmt -n lib/src
+
 dart_task:
   - test: --platform vm
   - dartanalyzer: true
-  - dartfmt: true
